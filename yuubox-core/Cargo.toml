@@ -1,0 +1,24 @@
+[package]
+name = "yuubox-core"
+version = "1.0.0"
+edition = "2021"
+license = "Apache-2.0"
+
+[lib]
+name = "yuubox_core"
+crate-type = ["cdylib"]
+
+[dependencies]
+pyo3 = { version = "0.20", features = ["extension-module", "abi3-py39"] }
+tokio = { version = "1.35", features = ["full"] }
+bollard = "0.15"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+chrono = "0.4"
+anyhow = "1.0"
+thiserror = "1.0"
+uuid = { version = "1.6", features = ["v4"] }
+futures-util = "0.3"
+
+[dev-dependencies]
+tokio-test = "0.4"

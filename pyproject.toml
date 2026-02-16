@@ -1,0 +1,40 @@
+[build-system]
+requires = ["maturin>=1.4,<2.0"]
+build-backend = "maturin"
+
+[project]
+name = "yuubox"
+version = "1.0.0"
+description = "Self-Healing Code Execution System (Rust + Python)"
+requires-python = ">=3.9"
+license = {text = "Apache-2.0"}
+dependencies = [
+    "rich>=13.0.0",
+    "click>=8.0.0",
+    "requests>=2.28.0",
+    "pyyaml>=6.0",
+]
+
+[project.optional-dependencies]
+api = [
+    "fastapi>=0.104.0",
+    "uvicorn[standard]>=0.24.0",
+]
+dev = [
+    "pytest>=7.4.0",
+    "black>=23.0.0",
+    "maturin>=1.4",
+]
+all = ["yuubox[api,dev]"]
+
+[project.scripts]
+yuubox = "yuubox.cli:main"
+
+[tool.maturin]
+python-source = "."
+module-name = "yuubox.yuubox_core"
+bindings = "pyo3"
+manifest-path = "yuubox-core/Cargo.toml"
+
+[tool.black]
+line-length = 100
