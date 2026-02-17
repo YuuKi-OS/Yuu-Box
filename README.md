@@ -1848,9 +1848,7 @@ maturin develop
 
 | Project | Description |
 |:--------|:------------|
-| [Yuu (Python SDK)](https://github.com/yuuki-os/yuu) | Official Python SDK for Yuuki code generation |
-| [Yuu.js (JavaScript SDK)](https://github.com/yuuki-os/yuu.js) | Official JavaScript/TypeScript SDK for Yuuki |
-| [Yuu-rs (Rust SDK)](https://github.com/yuuki-os/yuu-rs) | Official Rust SDK for Yuuki |
+|
 | [Yuuki API](https://huggingface.co/spaces/OpceanAI/Yuuki-api) | Open inference API on HuggingFace Spaces |
 | [Yuuki Models](https://huggingface.co/OpceanAI/Yuuki-best) | Pre-trained model weights |
 
