@@ -1846,14 +1846,46 @@ maturin develop
 
 <br>
 
-| Project | Description |
-|:--------|:------------|
-|
-| [Yuuki API](https://huggingface.co/spaces/OpceanAI/Yuuki-api) | Open inference API on HuggingFace Spaces |
-| [Yuuki Models](https://huggingface.co/OpceanAI/Yuuki-best) | Pre-trained model weights |
+<table>
+<tr>
+<td width="50%" valign="top">
+
+<h3>Yuuki API</h3>
+
+**[https://huggingface.co/spaces/OpceanAI/Yuuki-api](https://huggingface.co/spaces/OpceanAI/Yuuki-api)**
+
+Production inference API hosted on HuggingFace Spaces providing OpenAI-compatible endpoints for code generation. Offers three model variants with different performance characteristics: Yuuki Best (flagship model for production use), Yuuki 3.7 (balanced performance and speed), and Yuuki v0.1 (optimized for rapid iteration). The API requires zero authentication, supports streaming responses, and provides comprehensive error handling. Used as the backend for YuuBox's self-healing mechanism and all official Yuuki SDKs.
+
+**Key Features:**
+- Zero authentication required
+- Three model variants (Best, 3.7, v0.1)
+- OpenAI-compatible API format
+- Streaming response support
+- Global CDN distribution via HuggingFace Spaces
+- Automatic rate limiting and load balancing
+
+</td>
+<td width="50%" valign="top">
+
+<h3>Yuuki Models</h3>
+
+**[https://huggingface.co/OpceanAI/Yuuki-best](https://huggingface.co/OpceanAI/Yuuki-best)**
+
+Pre-trained model weights and checkpoints available on the HuggingFace Model Hub. The flagship Yuuki Best model provides state-of-the-art code generation capabilities with support for multiple programming languages including Python, JavaScript, TypeScript, Rust, Go, and Java. Models are trained on diverse code repositories and optimized for debugging, code completion, and full program synthesis. All models are publicly accessible and can be deployed locally or used for fine-tuning on domain-specific tasks.
+
+**Available Models:**
+- Yuuki Best: Flagship model with highest quality output
+- Yuuki 3.7: Balanced model for general-purpose use
+- Yuuki v0.1: Fast generation model for simple tasks
+- All models support multi-language code generation
+- Optimized for code fixing and error correction
+- Compatible with HuggingFace transformers library
+
+</td>
+</tr>
+</table>
 
 <br>
-
 ---
 
 <br>
