@@ -339,13 +339,13 @@ CLI/API Request
                 │
                 ▼
           ┌─────────────────┐
-          │   YuuBox        │
-          │   Executor      │
-          │                 │
-          │  for i in 1..5: │
-          │    ├─ execute   │
-          │    ├─ analyze   │
-          │    └─ heal      │
+          │   YuuBox           │
+          │   Executor         │
+          │                    │
+          │  for i in 1..5:    │
+          │    ├─ execute      │
+          │    ├─ analyze      │
+          │    └─ heal         |
           └────┬────────────┘
                │
                ├─────────────────────┬──────────────────────┐
